@@ -16,10 +16,8 @@ rutas( app )
 
 app.use('/', express.static('public'))
 
-const PORT =process.env.PORT || 3000
+const port = process.env.PORT || 3000;
 
-app.listen( PORT ,function(){
-console.log("Servidor escuchando en el puerto" , PORT)
+app.listen(port, function () {
+    console.log( "La aplicación está escuchando en http://localhost:",port)
 })
-
-console.log( `La aplicación está escuchando en http://localhost:${config.PUERTO}`)
